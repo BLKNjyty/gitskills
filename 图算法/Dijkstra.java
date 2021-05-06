@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 
 /**
+ * Dijkstra算法
  * 适用于：没有累加和权值为负数的环
  *
  * 生成最短权值路径：规定出发点，计算带所有节点的路径长度，不可达的节点规定为正无穷
