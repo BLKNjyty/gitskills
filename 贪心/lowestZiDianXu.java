@@ -2,7 +2,18 @@ package Greed;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
+/**
+ * 
+ * 保证拼接起来的大字符串字典序最小。
+ *
+ * [bk,at,cs]将三个短字符串拼接，生成6位的长字符串，这个结果字典序最小。
+ *
+ * 不同长度的字符串比较字典序，短的右边补齐0，从左向右比较。
+ *
+ * 贪心策略：ab和ba比较，选择字典序靠前。
+ *
+ * 错的想法： a,b  a<=b,  a放前 否则b放前  反例： b,ba  如果按照这个意思这么想 拼接后应该是 bba  但实际上是bab最小
+ */
 public class lowestZiDianXu {
     public static String lowestString(String[] strs){
         if (strs == null || strs.length ==0){
